@@ -1,10 +1,8 @@
-name: '毒鸡汤'
+name: '一个图文ONE'
 
 on:
-  watch:
-    types: [started]
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '20 0 * * *'
 
 jobs:
   bot:
@@ -15,6 +13,6 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: node ./plugins/dujitang.js
+      - run: node ./plugins/one.js
         env:
           bot_api: ${{ secrets.bot_api }}
