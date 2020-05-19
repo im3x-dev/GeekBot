@@ -1,6 +1,8 @@
 name: 'v2ex每日最热主题'
 
 on:
+  watch:
+    types: [started]
   schedule:
     - cron: '0 10 * * *'
 

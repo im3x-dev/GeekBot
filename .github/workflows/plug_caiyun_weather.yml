@@ -1,6 +1,8 @@
-name: 'v2ex每日最热主题'
+name: '彩云天气'
 
 on:
+  watch:
+    types: [started]
   schedule:
     - cron: '0 0-15 * * *'
 

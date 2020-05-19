@@ -1,6 +1,8 @@
 name: '一个图文ONE'
 
 on:
+  watch:
+    types: [started]
   schedule:
     - cron: '20 0 * * *'
 
